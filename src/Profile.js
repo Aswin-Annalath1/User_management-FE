@@ -1,16 +1,16 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { useParams, useSearchParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 function Profile() {
   const params = useParams();
-  const [searchParams] = useSearchParams();
+  // const [searchParams] = useSearchParams();
   const [user,setUser] = useState([]);
 
   useEffect(() => {
     // console.log(searchParams.get("status"));
     viewProfile();
-  }, []);
+  },);
 
   let viewProfile = async () => {
     try {

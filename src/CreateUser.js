@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useFormik } from "formik";
-import React, { useEffect, useState } from "react";
+// import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 function CreateUser() {
@@ -73,7 +73,7 @@ function CreateUser() {
     onSubmit: async (values) => {
       try {
         // console.log(values)
-        const newUserData= await axios.post("https://6511b6bab8c6ce52b394f19f.mockapi.io/users",values);
+        await axios.post("https://6511b6bab8c6ce52b394f19f.mockapi.io/users",values);
         alert("User created successfully");
         navigate("/users");
 

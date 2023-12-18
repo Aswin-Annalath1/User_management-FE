@@ -27,7 +27,7 @@ function ListUsers() {
     try {
       const confirmDelete=window.confirm("Are you sure, do you want to delete?")
       if(confirmDelete){
-        const deleteUser = await axios.delete(`https://6511b6bab8c6ce52b394f19f.mockapi.io/users/${userId}`);
+        await axios.delete(`https://6511b6bab8c6ce52b394f19f.mockapi.io/users/${userId}`);
         alert("User deleted successfully");
         fetchData();
       }

@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useFormik } from "formik";
-import React, { useEffect, useState } from "react";
+import React, { useEffect} from "react";
 import { useNavigate, useParams } from "react-router-dom";
 
 function EditProfile() {
@@ -70,7 +70,7 @@ function EditProfile() {
 
   useEffect(() => {
     getUserData();
-  }, []);
+  },);
 
   // let updateUser = async () => {
   //   // console.log(name,email,country,state,city,phone,dob,gender);
